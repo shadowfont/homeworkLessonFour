@@ -3,13 +3,16 @@ public class HomeworkLesson4 {
 
 
 // Задание №1
-//    for (int n = 1; n <= 100 ; n++) {
-//    System.out.print(n + "a ");
-//    }
 
+    for (int n = 1; n <= 100 ; n++) {
+    System.out.print(n + "a ");
+    }
+
+    System.out.println(" ");
 
 //  Задание №2
-    int age = 76;
+
+    int age = 30;
         if (age <=6) {
             System.out.println("Ходит в сад");
         }
@@ -20,7 +23,7 @@ public class HomeworkLesson4 {
         }
         if (age >11){
             if (age <=17){
-                System.out.printf("Ходит в среднюю школу");
+                System.out.println("Ходит в среднюю школу");
             }
         }
         if (age >17){
@@ -29,15 +32,58 @@ public class HomeworkLesson4 {
             }
         }
         if (age >25){
+            if (age <=61.5)
             System.out.println("Уже работает вовсю!");
         }
+        if(age >61.5){
+            System.out.println("Вышел на пенсию");
+        }
+
+//        Задача №3
+
+        boolean chicken = true;
+        boolean vegetables = false;
+        boolean sour = true;
+        boolean toast = true;
+        boolean sausage = true;
+        boolean eggs = true;
+        boolean trueCaesar = (chicken && vegetables && sour && toast);
+        boolean trueOlivier = (vegetables && (sausage || chicken) && eggs);
+        if (trueCaesar){
+            System.out.println("Можно цезарь");
+        } else if (trueOlivier) {
+            System.out.println("Можно оливье");
+        } else if (vegetables) {
+            System.out.println("Можно овошной");
+        } else {
+            System.out.println("Ничего нет");
+        }
+
+//        Задача № 4
+
+        Dog dog = new Dog(4,"есть", "гав" );
+//      Выводим инфу
+        System.out.println(dog.getInfo());
+//      Проверяем геттер
+        System.out.println(dog.getPaws());
+//      Проверяем сеттер
+        dog.setPaws(3);
+        dog.setVoice("Мычит");
+        System.out.println(dog.getInfo());
+
+        Snake snake = new Snake( 0, "есть", "шипит");
+//      Выводим инфу
+        System.out.println(snake.getInfo());
+//      Проверяем сеттер
+        snake.setPaws(3);
+        snake.setTail("потеряла");
+        snake.setVoice("заматерилась на Русском");
+        System.out.println(snake.getInfo());
+
 
 
     }
-}
-
-
-
+  }
 
 
 
@@ -47,17 +93,7 @@ public class HomeworkLesson4 {
 
 
 // Домашка
-//            // Базовый уровень
-//            // Задание №1 - Написать цикл, который выводит через пробел 100 чисел с приставкой "a".
-//            // Ожидаемый результат: 1а 2а 3а .. 100а
-//            //
-//            // Задание №2
-//            // Дано:
-//            int ageChildren = 10;
-//            // Задача: Написать условную конструкцию, которая в зависимости от возраста ребенка, отправляет его в учебное заведение
-//            // если ребенку до 6 лет то в сад, если до 11 лет в младшую школу, если до 17 лет в среднюю школу, иначе в университет
-//            // Отправляет - имеется в виду, печатает на экран: "пошел с сад", "пошел в младшую школу" и т.д.
-//            // Проверьте работоспособность условий, через изменение значения переменной.
+
 //            //
 //            // Задание №3
 //            // Дано:
